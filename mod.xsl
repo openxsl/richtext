@@ -2,9 +2,7 @@
     <xsl:template match="/root" name="openxsl.richtext">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-richtext" ox-mod="richtext">
-            <h1>
-                This is mod richtext;
-            </h1>
+            <xsl:value-of select="data/ui-richtext" disable-output-escaping="yes"/>
         </div>
     </xsl:template>
 </xsl:stylesheet>
